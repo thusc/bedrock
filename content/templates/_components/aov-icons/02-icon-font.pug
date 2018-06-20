@@ -1,6 +1,8 @@
-include ../../../../core/templates/mixins/icon-overview
-
 if config.icons.generateIconFont
-    +iconsOverview('icon-font', 'Icon font')
+    - var iconFontClassPrefix = config.icons && config.icons.iconFontClassPrefix || 'if';
+    each icon in icons.iconFont
+        div
+            i(class=`${iconFontClassPrefix} ${iconFontClassPrefix}-${icon}`)
+            code= icon
 else
     p You don't seem to have icon fonts activated in <code>bedrock.config.js</code>. You can safely delete these documentation templates if you are not using an icon font, or document your icon font in your own manner.

@@ -24,7 +24,20 @@
 [data-icon]:before { content: attr(data-icon); }
 
 [data-icon]:before,
-.if-example:before {
+.if-add:before,
+.if-added-to-folder:before,
+.if-alert:before,
+.if-arrow-down:before,
+.if-arrow-left:before,
+.if-arrow-right:before,
+.if-arrow-up:before,
+.if-attachment:before,
+.if-calendar:before,
+.if-camera:before,
+.if-caret-down:before,
+.if-example:before,
+.if-example2:before,
+.if-example3:before {
   display: inline-block;
   font-family: "icon-font";
   font-style: normal;
@@ -39,4 +52,17 @@
   font-smoothing: antialiased;
 }
 
+.if-add:before { content: "\f105"; }
+.if-added-to-folder:before { content: "\f106"; }
+.if-alert:before { content: "\f107"; }
+.if-arrow-down:before { content: "\f108"; }
+.if-arrow-left:before { content: "\f109"; }
+.if-arrow-right:before { content: "\f10a"; }
+.if-arrow-up:before { content: "\f10b"; }
+.if-attachment:before { content: "\f10c"; }
+.if-calendar:before { content: "\f10d"; }
+.if-camera:before { content: "\f10e"; }
+.if-caret-down:before { content: "\f10f"; }
 .if-example:before { content: "\f100"; }
+.if-example2:before { content: "\f102"; }
+.if-example3:before { content: "\f104"; }

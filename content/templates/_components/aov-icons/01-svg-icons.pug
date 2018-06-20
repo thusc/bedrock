@@ -1,3 +1,7 @@
-include ../../../../core/templates/mixins/icon-overview
+each category in icons.svg
 
-+iconsOverview('svg', 'SVG icons')
+    =JSON.stringify(icons.svg)
+
+    if icons.svg[category]
+        each icon in icons.svg[category]
+            p test
