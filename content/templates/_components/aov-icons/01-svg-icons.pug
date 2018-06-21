@@ -1,7 +1,5 @@
-each category in icons.svg
-
-    =JSON.stringify(icons.svg)
-
-    if icons.svg[category]
-        each icon in icons.svg[category]
-            p test
+each category, id in icons.svg
+    if id
+        p #{id}
+    each icon in category
+        +icon(icon.category+'/'+icon.name)
