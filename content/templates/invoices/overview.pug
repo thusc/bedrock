@@ -1,0 +1,38 @@
+extends /templates/_layouts/default
+
+block content
+
+    //-
+        Data points:
+        
+        Address
+        Payment due date
+        Client name
+        Amount
+        Status
+        [Actions]
+
+    table.table
+        thead
+            tr
+                th Address
+                th Payment due date
+                th Client 
+                th Amount
+                th Status
+                th
+                    // Actions
+        tbody
+            - var n = 0
+            while n < 12
+                - n++
+                tr
+                    td Pieter van den Bemdenlaan 20, 2650 Edegem
+                    td 30 days
+                    td ACME inc.
+                    td €3000.00
+                    td Not paid
+                    td
+                        button Duplicate
+                        button Delete
+                        button View invoice

@@ -2,6 +2,27 @@ extends master
 
 block body
 
-    .container
-        block content
-            // Add content here
+    block header
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            a.navbar-brand(href='#') MyInvoices
+            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            .collapse.navbar-collapse#navbarSupportedContent
+                ul.navbar-nav.mr-auto
+                    li.nav-item.active
+                        a.nav-link(href='#')
+                            | Invoices
+                            span.sr-only (current)
+                    li.nav-item
+                        a.nav-link(href='#') Reports
+                    li.nav-item
+                        a.nav-link(href='#') Settings
+                    li.nav-item
+                        a.nav-link(href='/authentication/sign-in.html') Sign out
+    block content
+        p My Content Area
+
+    block footer
+        // Add in correct utility class later
+        .u-p-2
+            p.text-muted ©MyInvoices 2018

@@ -13,7 +13,7 @@ module.exports = {
      *  snippetLanguage {html, pug}
      *  Determines language of code snippets in styleguide
     */
-    snippetLanguage: 'html',
+    snippetLanguage: 'pug',
    /**
     *  Path to colors SCSS
     *  We use regexes to parse this file to show the colors in styleguide
